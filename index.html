@@ -30,14 +30,14 @@
       const weights = {
         criterion1: .5, // Market analysis 
         criterion2: 1, // Target specification selection
-        criterion3: 1, // Selecting high level requirements
-        criterion4: 1, // Traction force calculation
-        criterion5: 1, // Simulation
+        criterion3: .5, // Selecting high level requirements
+        criterion4: .5, // Traction force calculation
+        criterion5: .5, // Simulation
         criterion6: 1, // Battery data table
-        criterion7: .5, // Plot observations quality
+        criterion7: 1.5, // Plot observations quality
         criterion8: 1.5, // Battery pack list observation
-        criterion9: 1, // Conclusion
-        criterion10: 1.5 // Formatting and readablity
+        criterion9: 2, // Conclusion
+        criterion10: 1 // Formatting and readablity
       };
 
       const weightedSum =
@@ -117,13 +117,14 @@
 
           <div class="form-group input-group ">
 
-            <label class="form-control input-group-text" for="criterion1">Market analysis (1-3):</label>
+            <label class="form-control input-group-text" for="criterion1">Market analysis (0-3):</label>
             <!--Market analysis -->
 
 
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion1" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -143,11 +144,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion2">Target specification selection (1-3):</label>
+            <label class="form-control input-group-text" for="criterion2">Target specification selection (0-3):</label>
             <!--Target specification selection -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion2">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -165,11 +167,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion3">High level requirements (1-3):</label>
+            <label class="form-control input-group-text" for="criterion3">High level requirements (0-3):</label>
             <!--Selecting high level requirements -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion3" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -187,11 +190,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion4">Traction force calculation:</label>
+            <label class="form-control input-group-text" for="criterion4">Traction force calculation  (0-3):</label>
             <!--Traction force calculation -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion4" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -209,11 +213,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion5">Simulation (1-3):</label>
+            <label class="form-control input-group-text" for="criterion5">Simulation (0-3):</label>
             <!--Simulation -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion5" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -230,11 +235,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion6">Battery data table (1-3):</label>
+            <label class="form-control input-group-text" for="criterion6">Battery data table (0-3):</label>
             <!--Battery data table -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion6" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -248,11 +254,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion7">Plot observations quality (1-3):</label>
+            <label class="form-control input-group-text" for="criterion7">Plot observations quality (0-3):</label>
             <!--Plot observations quality -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion7" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -269,11 +276,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion8">Battery pack list observation (1-3):</label>
+            <label class="form-control input-group-text" for="criterion8">Battery pack list observation (0-3):</label>
             <!--Battery pack list observation -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion8" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -289,11 +297,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion9">Conclusions (1-3):</label>
+            <label class="form-control input-group-text" for="criterion9">Conclusions (0-3):</label>
             <!--Conclusions -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion9" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -310,11 +319,12 @@
 
 
           <div class="form-group input-group">
-            <label class="form-control input-group-text" for="criterion10">Formatting and readablity (1-3):</label>
+            <label class="form-control input-group-text" for="criterion10">Formatting and readablity (0-3):</label>
             <!-- Formatting and readablity -->
             <select style="width: 25%; color: #495057 ;  border: 1px solid #ced4da; border-radius: .25rem;"
               id="criterion10" width="auto">
               <option selected>Score </option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
